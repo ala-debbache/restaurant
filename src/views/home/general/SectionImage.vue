@@ -19,7 +19,7 @@ export default {
 }
 
 .image img {
-  width: 500px;
+  width: 80%;
   border-radius: 50%;
 }
 @media only screen and (max-width: 900px) {

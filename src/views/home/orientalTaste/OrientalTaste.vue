@@ -41,10 +41,14 @@ export default {
   display: flex;
   align-items: flex-end;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
   #oriental-taste {
     padding-top: 100px;
     height: fit-content;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #oriental-taste {
     flex-direction: column;
     background: var(--white);
   }

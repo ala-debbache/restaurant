@@ -61,10 +61,16 @@ export default {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
   #best-saller {
     height: fit-content;
   }
+}
+
+@media only screen and (max-width: 800px) {
+  /* #best-saller {
+    height: fit-content;
+  } */
   .cards {
     width: 100%;
     display: flex;
