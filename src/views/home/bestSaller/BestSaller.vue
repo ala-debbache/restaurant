@@ -48,7 +48,7 @@ export default {
 #best-saller {
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 100px 5%;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
@@ -65,17 +65,17 @@ export default {
   #best-saller {
     height: fit-content;
   }
-}
-
-@media only screen and (max-width: 800px) {
-  /* #best-saller {
-    height: fit-content;
-  } */
   .cards {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+
+@media only screen and (max-width: 800px) {
+  /* #best-saller {
+    height: fit-content;
+  } */
 }
 </style>

@@ -31,17 +31,25 @@ export default {
 #chicken-gril {
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 100px 5%;
   background: url("@/assets/images/wave-bg-2-reverse.png");
   background-color: var(--white);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  #chicken-gril {
+    height: fit-content;
+    /* padding: 100px 5%; */
+  }
 }
 @media only screen and (max-width: 900px) {
   #chicken-gril {
-    padding-top: 100px;
-    height: fit-content;
+    /* padding-top: 100px; */
+    /* height: fit-content; */
     flex-direction: column;
     background: var(--white);
   }

@@ -1,6 +1,6 @@
 <template >
   <div class="image">
-    <img data-aos="fade-left" src="@/assets/images/2.jpg" />
+    <img data-aos="fade-left" data-aos-delay="0" src="@/assets/images/2.jpg" />
   </div>
 </template>
 <script>
@@ -25,7 +25,7 @@ export default {
 @media only screen and (max-width: 900px) {
   .image {
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .image img {
     width: 80%;

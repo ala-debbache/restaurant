@@ -124,8 +124,8 @@ export default {
 <style scoped>
 #footer {
   width: 100%;
-  height: 100vh;
-  padding: 0 5%;
+  /* height: 100vh; */
+  padding: 200px 5%;
   background-color: var(--black);
   display: flex;
   align-items: center;
@@ -170,6 +170,7 @@ export default {
 @media only screen and (max-width: 1000px) {
   #footer {
     height: fit-content;
+    padding: 100px 5%;
     flex-direction: column;
     background: var(--black);
   }
@@ -179,14 +180,17 @@ export default {
   }
   .footer-links {
     width: 100%;
-    margin-top: 50px;
     justify-content: space-between;
-    /* flex-direction: column; */
   }
 }
 @media only screen and (max-width: 600px) {
+  #footer {
+    height: fit-content;
+    padding: 50px 5%;
+  }
   .footer-links {
     flex-direction: column;
+    justify-content: flex-start;
   }
 }
 </style>

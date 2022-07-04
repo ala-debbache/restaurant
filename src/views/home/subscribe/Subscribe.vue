@@ -27,9 +27,8 @@ export default {
 #subscribe {
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 100px 5%;
   background: url("@/assets/images/subscribe.png");
-  /* background-color: var(--white); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -63,12 +62,19 @@ export default {
   border-radius: 0 5px 5px 0;
 }
 
+@media only screen and (max-width: 1500px) {
+  #subscribe {
+    height: fit-content;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   #subscribe {
     background: var(--white);
   }
   .form {
     width: 90%;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width: 500px) {

@@ -31,7 +31,7 @@ export default {
 #oriental-taste {
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 100px 5%;
   padding-bottom: 100px;
   background: url("@/assets/images/wave-bg-1-reverse.png");
   background-color: var(--white);
@@ -39,11 +39,10 @@ export default {
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 @media only screen and (max-width: 1500px) {
   #oriental-taste {
-    padding-top: 100px;
     height: fit-content;
   }
 }

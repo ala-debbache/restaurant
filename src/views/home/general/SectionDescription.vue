@@ -13,7 +13,7 @@ export default {
 <style scoped>
 .description {
   width: 50%;
-  margin: 100px 0 50px 0;
+  margin-bottom: 50px;
   text-align: center;
 }
 

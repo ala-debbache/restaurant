@@ -121,7 +121,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   nav {
     width: 100%;
     padding: 20px 0;

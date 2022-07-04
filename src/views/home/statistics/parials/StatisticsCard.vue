@@ -20,6 +20,7 @@ export default {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  background-color: var(--black);
 }
 
 .card h5 {
@@ -35,7 +36,7 @@ export default {
   color: var(--white);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .card {
     margin-bottom: 20px;
   }

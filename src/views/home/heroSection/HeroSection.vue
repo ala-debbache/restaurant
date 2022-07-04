@@ -3,12 +3,12 @@
         <nav-bar></nav-bar>
         <main class="main">
             <div class="content">
-                <h1 data-aos="fade-down">Title Here</h1>
-                <p data-aos="fade-right">
+                <h1 data-aos="fade-down" data-aos-delay="500">Title Here</h1>
+                <p data-aos="fade-right" data-aos-delay="500">
                     Duis culpa dolore eu sint dolore qui aliquip ex eu ullamco in proident aute pariatur. Ad elit aliqua veniam in proident ipsum mollit proident velit reprehenderit tempor minim deserunt ad. Ullamco nisi velit.
                 </p>
                 <v-btn
-                data-aos="fade-right"
+                data-aos="fade-right" data-aos-delay="500"
                 color="#f2b705"
                 elevation="2"
                 large
@@ -31,7 +31,7 @@ export default {
   width: 100%;
   height: 100vh;
   padding: 0 5%;
-  background: url("@/assets/images/hero-1.png"),
+  background: url("@/assets/images/hero.png"),
     url("@/assets/images/hero-section-backround.jpg");
   background-size: 65% 100%, cover;
   background-repeat: no-repeat;
@@ -46,13 +46,14 @@ export default {
 
 .main {
   width: 100%;
-  flex-grow: 1;
+  height: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .content {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,10 +77,11 @@ export default {
 
 @media only screen and (max-width: 1400px) {
   #hero-section {
+    height: fit-content;
     background: linear-gradient(
         0deg,
-        rgba(38, 38, 38, 0.520045518207283) 100%,
-        rgba(38, 38, 38, 0.500437675070028) 100%
+        rgba(38, 38, 38, 0.75) 100%,
+        rgba(38, 38, 38, 0.75) 100%
       ),
       url("@/assets/images/hero-section-backround-reverse.png");
     background-size: cover;
@@ -87,7 +89,10 @@ export default {
     background-position: center;
   }
   .main {
+    height: fit-content;
+    padding: 100px 0;
     flex-direction: row;
+    align-items: center;
   }
 }
 

@@ -1,11 +1,11 @@
 <template lang="">
     <div class="content">
-        <h1 data-aos="fade-down">{{title}}</h1>
-        <p data-aos="fade-right" contentEditable>
+        <h1 data-aos="fade-down" data-aos-delay="0">{{title}}</h1>
+        <p data-aos="fade-right" data-aos-delay="0" contentEditable>
             {{description}}
         </p>
         <v-btn
-        data-aos="fade-right"
+        data-aos="fade-right" data-aos-delay="0"
         color="#f2b705"
         elevation="2"
         large
@@ -49,7 +49,7 @@ export default {
 
 @media only screen and (max-width: 900px) {
   .content {
-    margin: 100px 0;
+    margin-bottom: 50px;
     width: 100%;
     /* text-align: center;
     align-items: center; */

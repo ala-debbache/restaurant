@@ -46,7 +46,7 @@ export default {
 #statistics {
   width: 100%;
   height: 100vh;
-  padding: 0 5%;
+  padding: 100px 5%;
   background: url("@/assets/images/statistics.png");
   background-size: 100% cover;
   background-position: center;
@@ -61,15 +61,31 @@ export default {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
   #statistics {
     height: fit-content;
   }
+}
+
+@media only screen and (max-width: 1400px) {
+  #statistics {
+    background: none;
+    background-color: var(--black);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .cards {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #statistics {
+    height: fit-content;
   }
 }
 </style>

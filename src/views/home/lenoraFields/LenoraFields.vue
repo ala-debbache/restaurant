@@ -57,6 +57,13 @@ export default {
 .content h3 {
   font-size: 54px;
 }
+
+@media only screen and (max-width: 1500px) {
+  #lenora-fields {
+    height: 50vh;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .content p {
     font-size: 20px;
