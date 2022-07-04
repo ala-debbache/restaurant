@@ -31,7 +31,7 @@ export default {
 #chicken-gril {
   width: 100%;
   height: 100vh;
-  padding: 100px 5%;
+  padding: 50px 5%;
   background: url("@/assets/images/wave-bg-2-reverse.png");
   background-color: var(--white);
   background-size: 100% 100%;

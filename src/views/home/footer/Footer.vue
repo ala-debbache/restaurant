@@ -125,7 +125,7 @@ export default {
 #footer {
   width: 100%;
   /* height: 100vh; */
-  padding: 200px 5%;
+  padding: 100px 5%;
   background-color: var(--black);
   display: flex;
   align-items: center;

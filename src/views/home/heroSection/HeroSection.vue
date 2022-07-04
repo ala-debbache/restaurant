@@ -1,6 +1,10 @@
 <template lang="">
     <div id="hero-section">
         <nav-bar></nav-bar>
+        <img src="@/assets/images/onion.png" class="icon" id="onion" />
+        <img src="@/assets/images/pepper.png" class="icon" id="pepper" />
+        <img src="@/assets/images/avocado.png" class="icon" id="avocado" />
+        <img src="@/assets/images/tomato.png" class="icon" id="tomato" />
         <main class="main">
             <div class="content">
                 <h1 data-aos="fade-down" data-aos-delay="500">Title Here</h1>
@@ -28,6 +32,7 @@ export default {
 </script>
 <style scoped>
 #hero-section {
+  position: relative;
   width: 100%;
   height: 100vh;
   padding: 0 5%;
@@ -38,6 +43,38 @@ export default {
   background-position: right, center;
   display: flex;
   flex-direction: column;
+}
+
+.icon {
+  position: absolute;
+}
+
+#onion {
+  width: 150px;
+  bottom: 50px;
+  right: 5%;
+  transform: rotate(-60deg);
+}
+
+#pepper {
+  width: 100px;
+  top: 250px;
+  right: 7%;
+  transform: rotate(-120deg);
+}
+
+#avocado {
+  width: 100px;
+  top: 150px;
+  right: 25%;
+  transform: rotate(3deg);
+}
+
+#tomato {
+  width: 100px;
+  top: 150px;
+  right: 50%;
+  transform: rotate(-20deg);
 }
 
 .overlay {
@@ -88,9 +125,12 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
   }
+  .icon {
+    display: none;
+  }
   .main {
     height: fit-content;
-    padding: 100px 0;
+    padding: 50px 5%;
     flex-direction: row;
     align-items: center;
   }
